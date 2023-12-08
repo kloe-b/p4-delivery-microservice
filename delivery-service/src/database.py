@@ -4,7 +4,7 @@ from flask_bcrypt import Bcrypt
 db = SQLAlchemy()
 bcrypt = Bcrypt()
 
-class Delivery(db.Model):
+class Del(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     order_id = db.Column(db.Integer, nullable=False)
     product_id = db.Column(db.Integer, nullable=False)
